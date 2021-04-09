@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_PHBEQJR_EeuSO-g8_9zI_g" name="projet uni">
+  <eAnnotations xmi:id="_PHBEQZR_EeuSO-g8_9zI_g" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_PHBEQpR_EeuSO-g8_9zI_g" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_PHBEQ5R_EeuSO-g8_9zI_g" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PHBERJR_EeuSO-g8_9zI_g" name="Utilisateur">
+    <ownedAttribute xmi:id="_PHBERZR_EeuSO-g8_9zI_g" name="site web" visibility="public" type="_PHBEWpR_EeuSO-g8_9zI_g" isUnique="false" association="_PHBES5R_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PHBERpR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBER5R_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PHBESJR_EeuSO-g8_9zI_g" name="article" visibility="public" type="_PHBEUpR_EeuSO-g8_9zI_g" isUnique="false" association="_PHBETpR_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PHBESZR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBESpR_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PHBES5R_EeuSO-g8_9zI_g" name="visite" memberEnd="_PHBERZR_EeuSO-g8_9zI_g _PHBETJR_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_PHBETJR_EeuSO-g8_9zI_g" visibility="public" type="_PHBERJR_EeuSO-g8_9zI_g" isUnique="false" association="_PHBES5R_EeuSO-g8_9zI_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBETZR_EeuSO-g8_9zI_g"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PHBETpR_EeuSO-g8_9zI_g" name="achete" memberEnd="_PHBESJR_EeuSO-g8_9zI_g _PHBET5R_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_PHBET5R_EeuSO-g8_9zI_g" visibility="public" type="_PHBERJR_EeuSO-g8_9zI_g" isUnique="false" association="_PHBETpR_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PHBEUJR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBEUZR_EeuSO-g8_9zI_g"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PHBEUpR_EeuSO-g8_9zI_g" name="Article"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PHBEU5R_EeuSO-g8_9zI_g" name="Magasin">
+    <ownedAttribute xmi:id="_PHBEVJR_EeuSO-g8_9zI_g" name="magasin" visibility="public" type="_PHBEUpR_EeuSO-g8_9zI_g" isUnique="false" association="_PHBEVpR_EeuSO-g8_9zI_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBEVZR_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PHBEVpR_EeuSO-g8_9zI_g" name="possede" memberEnd="_PHBEVJR_EeuSO-g8_9zI_g _PHBEV5R_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_PHBEV5R_EeuSO-g8_9zI_g" visibility="public" type="_PHBEU5R_EeuSO-g8_9zI_g" isUnique="false" association="_PHBEVpR_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PHBEWJR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBEWZR_EeuSO-g8_9zI_g"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PHBEWpR_EeuSO-g8_9zI_g" name="site web">
+    <ownedAttribute xmi:id="_PHBEW5R_EeuSO-g8_9zI_g" name="article" visibility="public" type="_PHBEUpR_EeuSO-g8_9zI_g" isUnique="false" association="_PHBEYJR_EeuSO-g8_9zI_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBEXJR_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PHBEXZR_EeuSO-g8_9zI_g" name="magasin" visibility="public" type="_PHBEU5R_EeuSO-g8_9zI_g" isUnique="false" association="_PHBEY5R_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PHBEXpR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBEX5R_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PHBEYJR_EeuSO-g8_9zI_g" name="contient" memberEnd="_PHBEW5R_EeuSO-g8_9zI_g _PHBEYZR_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_PHBEYZR_EeuSO-g8_9zI_g" visibility="public" type="_PHBEWpR_EeuSO-g8_9zI_g" isUnique="false" association="_PHBEYJR_EeuSO-g8_9zI_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBEYpR_EeuSO-g8_9zI_g"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PHBEY5R_EeuSO-g8_9zI_g" name="reference" memberEnd="_PHBEXZR_EeuSO-g8_9zI_g _PHBEZJR_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_PHBEZJR_EeuSO-g8_9zI_g" visibility="public" type="_PHBEWpR_EeuSO-g8_9zI_g" isUnique="false" association="_PHBEY5R_EeuSO-g8_9zI_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PHBEZZR_EeuSO-g8_9zI_g" name="Admin">
+    <ownedAttribute xmi:id="_PHBEZpR_EeuSO-g8_9zI_g" name="site web" visibility="public" type="_PHBEWpR_EeuSO-g8_9zI_g" isUnique="false" association="_PHBEaJR_EeuSO-g8_9zI_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBEZ5R_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PHBEaJR_EeuSO-g8_9zI_g" name="gere" memberEnd="_PHBEZpR_EeuSO-g8_9zI_g _PHBEaZR_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_PHBEaZR_EeuSO-g8_9zI_g" visibility="public" type="_PHBEZZR_EeuSO-g8_9zI_g" isUnique="false" association="_PHBEaJR_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PHBEapR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHBEa5R_EeuSO-g8_9zI_g"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

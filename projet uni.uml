@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Qqlv0JR_EeuSO-g8_9zI_g" name="projet uni">
+  <eAnnotations xmi:id="_Qqlv0ZR_EeuSO-g8_9zI_g" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_Qqlv0pR_EeuSO-g8_9zI_g" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_Qqlv05R_EeuSO-g8_9zI_g" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Qqlv1JR_EeuSO-g8_9zI_g" name="Utilisateur">
+    <ownedAttribute xmi:id="_Qqlv1ZR_EeuSO-g8_9zI_g" name="site web" visibility="public" type="_Qqlv6pR_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv25R_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qqlv1pR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv15R_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Qqlv2JR_EeuSO-g8_9zI_g" name="article" visibility="public" type="_Qqlv4pR_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv3pR_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qqlv2ZR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv2pR_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Qqlv25R_EeuSO-g8_9zI_g" name="visite" memberEnd="_Qqlv1ZR_EeuSO-g8_9zI_g _Qqlv3JR_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_Qqlv3JR_EeuSO-g8_9zI_g" visibility="public" type="_Qqlv1JR_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv25R_EeuSO-g8_9zI_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv3ZR_EeuSO-g8_9zI_g"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Qqlv3pR_EeuSO-g8_9zI_g" name="achete" memberEnd="_Qqlv2JR_EeuSO-g8_9zI_g _Qqlv35R_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_Qqlv35R_EeuSO-g8_9zI_g" visibility="public" type="_Qqlv1JR_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv3pR_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qqlv4JR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv4ZR_EeuSO-g8_9zI_g"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Qqlv4pR_EeuSO-g8_9zI_g" name="Article"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Qqlv45R_EeuSO-g8_9zI_g" name="Magasin">
+    <ownedAttribute xmi:id="_Qqlv5JR_EeuSO-g8_9zI_g" name="magasin" visibility="public" type="_Qqlv4pR_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv5pR_EeuSO-g8_9zI_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv5ZR_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Qqlv5pR_EeuSO-g8_9zI_g" name="possede" memberEnd="_Qqlv5JR_EeuSO-g8_9zI_g _Qqlv55R_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_Qqlv55R_EeuSO-g8_9zI_g" visibility="public" type="_Qqlv45R_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv5pR_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qqlv6JR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv6ZR_EeuSO-g8_9zI_g"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Qqlv6pR_EeuSO-g8_9zI_g" name="site web">
+    <ownedAttribute xmi:id="_Qqlv65R_EeuSO-g8_9zI_g" name="article" visibility="public" type="_Qqlv4pR_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv8JR_EeuSO-g8_9zI_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv7JR_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Qqlv7ZR_EeuSO-g8_9zI_g" name="magasin" visibility="public" type="_Qqlv45R_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv85R_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qqlv7pR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv75R_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Qqlv8JR_EeuSO-g8_9zI_g" name="contient" memberEnd="_Qqlv65R_EeuSO-g8_9zI_g _Qqlv8ZR_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_Qqlv8ZR_EeuSO-g8_9zI_g" visibility="public" type="_Qqlv6pR_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv8JR_EeuSO-g8_9zI_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv8pR_EeuSO-g8_9zI_g"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Qqlv85R_EeuSO-g8_9zI_g" name="reference" memberEnd="_Qqlv7ZR_EeuSO-g8_9zI_g _Qqlv9JR_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_Qqlv9JR_EeuSO-g8_9zI_g" visibility="public" type="_Qqlv6pR_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv85R_EeuSO-g8_9zI_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Qqlv9ZR_EeuSO-g8_9zI_g" name="Admin">
+    <ownedAttribute xmi:id="_Qqlv9pR_EeuSO-g8_9zI_g" name="site web" visibility="public" type="_Qqlv6pR_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv-JR_EeuSO-g8_9zI_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv95R_EeuSO-g8_9zI_g"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Qqlv-JR_EeuSO-g8_9zI_g" name="gere" memberEnd="_Qqlv9pR_EeuSO-g8_9zI_g _Qqlv-ZR_EeuSO-g8_9zI_g">
+    <ownedEnd xmi:id="_Qqlv-ZR_EeuSO-g8_9zI_g" visibility="public" type="_Qqlv9ZR_EeuSO-g8_9zI_g" isUnique="false" association="_Qqlv-JR_EeuSO-g8_9zI_g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qqlv-pR_EeuSO-g8_9zI_g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qqlv-5R_EeuSO-g8_9zI_g"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
